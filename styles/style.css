@@ -102,11 +102,11 @@ ol {
 
 .search-form__label:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .search-form__label:focus {
   outline: none;
-  
 }
 
 .search-form__label:focus-visible {
@@ -119,6 +119,10 @@ ol {
 
 .search-form__label-text:hover {
   text-decoration: underline;
+}
+
+.search-form__textfield:not(:placeholder-shown) {
+  border: 1px solid white;
 }
 
 .search-form__submit-button {
@@ -190,6 +194,11 @@ ol {
   overflow-y: auto;
 }
 
+.content__list::-webkit-scrollbar { 
+  display: none;
+}
+/* Спасибо за совет как убрать скрол) */
+
 .content__list-item {
   height: 107px;
   margin: 2px;
@@ -215,6 +224,7 @@ ol {
 
 .content__card-link:focus {
   outline: none;
+  background-color: #545050;
 }
 .content__card-link:focus-visible {
   outline: 1px solid #fff;  
